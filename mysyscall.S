@@ -18,3 +18,5 @@ myexit:
 	syscall
 	retq
 	.size	myexit, . - myexit
+
+	.section .note.GNU-stack,"",%progbits
