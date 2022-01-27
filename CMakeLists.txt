@@ -7,4 +7,4 @@ add_executable(noargs noargs.c)
 
 target_compile_options(argvdump PRIVATE -ffreestanding -O -g)
 target_link_options(argvdump PRIVATE -Wl,-e,start
-    -nostartfiles -nodefaultlibs)
+    -nostartfiles -nodefaultlibs -static)
